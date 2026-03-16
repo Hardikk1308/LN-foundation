@@ -4,9 +4,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ['ln-foundation-2.onrender.com']
+    allowedHosts: ['ln-foundation-2.onrender.com', 'ln-foundation-3.onrender.com']
   },
   preview: {
-    allowedHosts: ['ln-foundation-2.onrender.com']
+    allowedHosts: ['ln-foundation-2.onrender.com', 'ln-foundation-3.onrender.com']
   }
 })
+
