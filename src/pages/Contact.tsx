@@ -31,7 +31,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 style={{ fontSize: '1.25rem', marginBottom: '0.25rem' }}>Head Office</h3>
-                    <p style={{ color: 'var(--text-body)', fontSize: '1.1rem' }}>Plot 45, Health Avenue<br />Delhi, India 110001</p>
+                    <p style={{ color: 'var(--text-body)', fontSize: '1.1rem' }}>New Bali Bazaar<br />Chhindwara, Madhya Pradesh, <br />India 480001</p>
                   </div>
                 </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 style={{ fontSize: '1.25rem', marginBottom: '0.25rem' }}>Phone Number</h3>
-                    <p style={{ color: 'var(--text-body)', fontSize: '1.1rem' }}>+91 98765 43210<br/>+91 11 2345 6789</p>
+                    <p style={{ color: 'var(--text-body)', fontSize: '1.1rem' }}>+91 898900468</p>
                   </div>
                 </div>
 
@@ -51,7 +51,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 style={{ fontSize: '1.25rem', marginBottom: '0.25rem' }}>Email Address</h3>
-                    <p style={{ color: 'var(--text-body)', fontSize: '1.1rem' }}>contact@lumenova.org<br/>partners@lumenova.org</p>
+                    <p style={{ color: 'var(--text-body)', fontSize: '1.1rem' }}>lnfoundation074@gmail.com</p>
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer pt-5 pb-2">
       <div className="container footer-grid">
         <div className="footer-col about-col">
-          <Link to="/" className="brand" style={{ background: 'white', padding: '0.5rem', borderRadius: 'var(--radius-md)', display: 'inline-block' }}>
+          <Link to="/" className="brand" style={{ background: 'white', padding: '1rem', borderRadius: 'var(--radius-md)', display: 'inline-block' }}>
             <img src="/assets/images/logo.png" alt="Lumenova Foundation Logo" className="brand-logo" />
           </Link>
           <p className="footer-desc mt-1">
@@ -48,15 +48,15 @@ const Footer = () => {
           <ul className="contact-info">
             <li>
               <MapPin className="contact-icon" size={20} />
-              <span>Plot 45, Health Avenue<br/>Delhi, India 110001</span>
+              <span>New Bali Bazaar<br/>Chhindwara,Madhya Pradesh, India 480001</span>
             </li>
             <li>
               <Phone className="contact-icon" size={20} />
-              <span>+91 98765 43210</span>
+              <span>+91 898900468</span>
             </li>
             <li>
               <Mail className="contact-icon" size={20} />
-              <span>contact@lumenova.org</span>
+              <span>lnfoundation074@gmail.com</span>
             </li>
           </ul>
         </div>

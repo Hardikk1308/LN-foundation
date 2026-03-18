@@ -19,11 +19,11 @@
 }
 
 .footer .brand-logo {
-  height: 90px;
+  height: 100px;
   width: auto;
   object-fit: contain;
   transform: scale(1.4);
-  transform-origin: left center;
+  transform-origin:  center;
 }
 
 .footer-desc {
