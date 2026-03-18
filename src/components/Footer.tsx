@@ -14,7 +14,7 @@ const Footer = () => {
             Build a healthier and safer community where every mother, child, and family has access to quality health awareness, preventive care, and early screening services.
           </p>
           <div className="social-links mt-1">
-            <a href="#" className="social-icon"><Facebook size={20} /></a>
+            <a href="https://www.instagram.com/lumenovafoundation?igsh=ZjFldmxyZm0ybTAw" className="social-icon"><Facebook size={20} /></a>
             <a href="#" className="social-icon"><Twitter size={20} /></a>
             <a href="#" className="social-icon"><Instagram size={20} /></a>
             <a href="#" className="social-icon"><Linkedin size={20} /></a>
