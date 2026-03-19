@@ -43,10 +43,10 @@ We are dedicated to organizing general health check-ups, supporting maternal and
             </div>
             <div className="mission-image-wrapper">
               <img src="/assets/images/health_camp_community_1773512223177.png" alt="Health Awareness Camp" className="mission-image" />
-              <div className="experience-badge glass-panel">
-                <span className="number">10+</span>
-                <span className="text">Years of<br/>Impact</span>
-              </div>
+              {/* <div className="experience-badge glass-panel"> */}
+                {/* <span className="number">10+</span>
+                <span className="text">Years of<br/>Impact</span> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
