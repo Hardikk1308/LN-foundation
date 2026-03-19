@@ -30,12 +30,14 @@ const Home = () => {
           <div className="mission-grid">
             <div className="mission-content">
               <h2 className="title">Our Mission</h2>
-              <p className="subtitle">We act as a bridge between communities and healthcare systems to ensure no one is left behind in receiving fundamental quality health education and screening.</p>
+              <p className="subtitle">Mission of Lumenova Foundation, 
+“The mission of Lumenova Foundation is to strengthen community health systems by ensuring accessible, affordable, and quality healthcare services at the grassroots level.
+We are dedicated to organizing general health check-ups, supporting maternal and adolescent health services, and promoting awareness on preventive care including cancer screening, to build a healthier and more informed rural community.”</p>
               <ul className="mission-list">
                 <li><HeartPulse className="mission-icon" /> Empower pregnant women with knowledge for safe institutional delivery</li>
                 <li><Baby className="mission-icon" /> Improve newborn and child health via caregiver education</li>
-                <li><ShieldCheck className="mission-icon" /> Promote early detection of diabetes, hypertension & cancer</li>
-                <li><Stethoscope className="mission-icon" /> Support government programs (ANC, PNC, Immunization, NCD)</li>
+                <li><ShieldCheck className="mission-icon" /> Promote early detection of NCD (diabetes, hypertension & cancer)</li>
+                <li><Stethoscope className="mission-icon" /> Support government programs </li>
               </ul>
               <Link to="/about" className="btn btn-outline mt-2">Learn More About Us</Link>
             </div>
