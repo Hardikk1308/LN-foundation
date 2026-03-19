@@ -9,7 +9,7 @@ const Blog = () => {
       category: "Maternal Health",
       date: "Oct 12, 2026",
       author: "Dr. Ananya Sharma",
-      image: "/assets/images/hero_mothers_kids_health_1773512201492.png",
+      image: "/assets/images/youth_volunteers_banner.png",
       excerpt: "Understanding why the first three months are the most crucial for fetal development and maternal safety in rural settings."
     },
     {
@@ -18,7 +18,7 @@ const Blog = () => {
       category: "Preventive Care",
       date: "Oct 05, 2026",
       author: "Rahul Verma, Health Champion",
-      image: "/assets/images/preventive_diabetes_1773512265544.png",
+      image: "/assets/images/youth_volunteers_banner.png",
       excerpt: "How dietary shifts and early screening are combatting the silent rise of Type-II Diabetes across Indian villages."
     },
     {
@@ -27,7 +27,7 @@ const Blog = () => {
       category: "Maternal Health",
       date: "Sep 28, 2026",
       author: "Lumenova Editorial",
-      image: "/assets/images/health_camp_community_1773512223177.png",
+      image: "/assets/images/youth_volunteers_banner.png",
       excerpt: "Moving away from high-risk home births to fully equipped health centers is fundamental in improving the Maternal Mortality Ratio."
     },
     {
@@ -36,7 +36,7 @@ const Blog = () => {
       category: "Community Education",
       date: "Sep 15, 2026",
       author: "Priya Desai",
-      image: "/assets/images/youth_champions_1773512283086.png",
+      image: "/assets/images/youth_volunteers_banner.png",
       excerpt: "How our Health Champions program is transforming enthusiastic youth into frontline warriors for public hygiene and nutrition."
     }
   ];

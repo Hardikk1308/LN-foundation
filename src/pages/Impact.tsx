@@ -1,4 +1,4 @@
-import { Users, HeartPulse, Activity, Globe } from 'lucide-react';
+
 
 const Impact = () => {
   return (
@@ -17,79 +17,33 @@ const Impact = () => {
         </div>
       </section>
 
-      <section className="section section-bg">
-        <div className="container">
-          <div className="text-center" style={{ marginBottom: '4rem' }}>
-            <h2 className="title">By The Numbers</h2>
-            <p className="subtitle">Every number represents a life touched, a family supported, and a community strengthened.</p>
-          </div>
-          
-          <div className="grid grid-4 text-center">
-            <div className="glass-panel" style={{ padding: '3rem 2rem', background: 'white' }}>
-              <Globe size={48} color="var(--primary)" style={{ margin: '0 auto 1.5rem' }} />
-              <h3 style={{ fontSize: '3rem', color: 'var(--secondary)', marginBottom: '0.5rem' }}>250+</h3>
-              <p style={{ fontWeight: 600 }}>Villages Reached</p>
-            </div>
-            <div className="glass-panel" style={{ padding: '3rem 2rem', background: 'white' }}>
-              <HeartPulse size={48} color="var(--primary)" style={{ margin: '0 auto 1.5rem' }} />
-              <h3 style={{ fontSize: '3rem', color: 'var(--secondary)', marginBottom: '0.5rem' }}>15k+</h3>
-              <p style={{ fontWeight: 600 }}>Mothers Supported</p>
-            </div>
-            <div className="glass-panel" style={{ padding: '3rem 2rem', background: 'white' }}>
-              <Activity size={48} color="var(--primary)" style={{ margin: '0 auto 1.5rem' }} />
-              <h3 style={{ fontSize: '3rem', color: 'var(--secondary)', marginBottom: '0.5rem' }}>800+</h3>
-              <p style={{ fontWeight: 600 }}>Health Camps</p>
-            </div>
-            <div className="glass-panel" style={{ padding: '3rem 2rem', background: 'white' }}>
-              <Users size={48} color="var(--primary)" style={{ margin: '0 auto 1.5rem' }} />
-              <h3 style={{ fontSize: '3rem', color: 'var(--secondary)', marginBottom: '0.5rem' }}>1,200</h3>
-              <p style={{ fontWeight: 600 }}>Community Volunteers</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
       
-      <section className="section">
+      <section className="section section-bg">
         <div className="container">
           <div className="grid grid-2" style={{ gap: '4rem', alignItems: 'center' }}>
             <div>
-              <h2 className="title">Translating Resources To Action</h2>
-              <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>
-                With transparent operations and targeted outreach, our programs consistently yield high returns on community health investments.
+              <h2 className="title" style={{ marginBottom: '1.5rem' }}>A Commitment to Real Action</h2>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.7', color: 'var(--text-body)', marginBottom: '1.5rem' }}>
+                At Lumenova Foundation, we believe that impact is measured not just in figures, but in the trust we build within communities. We are currently rolling out our pilot programs across Madhya Pradesh, focusing on three core areas that we believe will create the most significant long-term change.
               </p>
-              
-              <div style={{ marginBottom: '2rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontWeight: 600 }}>
-                  <span>Institutional Deliveries Increased By</span>
-                  <span style={{ color: 'var(--primary)' }}>65%</span>
+              <div style={{ display: 'grid', gap: '1.5rem' }}>
+                <div className="glass-panel" style={{ padding: '1.5rem', background: 'white' }}>
+                  <h4 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Grassroots Outreach</h4>
+                  <p>Establishing a local network of "Health Champions" in every village to ensure information is culturally relevant and timely.</p>
                 </div>
-                <div style={{ width: '100%', height: '12px', background: 'var(--surface-alt)', borderRadius: '6px', overflow: 'hidden' }}>
-                  <div style={{ width: '65%', height: '100%', background: 'var(--primary)', borderRadius: '6px' }}></div>
+                <div className="glass-panel" style={{ padding: '1.5rem', background: 'white' }}>
+                  <h4 style={{ color: 'var(--secondary)', marginBottom: '0.5rem' }}>Direct Intervention</h4>
+                  <p>Organizing mobile health camps equipped with essential diagnostic tools for early NCD detection and maternal care.</p>
                 </div>
-              </div>
-              
-              <div style={{ marginBottom: '2rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontWeight: 600 }}>
-                  <span>Early NCD Detections</span>
-                  <span style={{ color: 'var(--secondary)' }}>12,000+</span>
-                </div>
-                <div style={{ width: '100%', height: '12px', background: 'var(--surface-alt)', borderRadius: '6px', overflow: 'hidden' }}>
-                  <div style={{ width: '80%', height: '100%', background: 'var(--secondary)', borderRadius: '6px' }}></div>
-                </div>
-              </div>
-
-              <div style={{ marginBottom: '2rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontWeight: 600 }}>
-                  <span>Child Immunization Awareness Reach</span>
-                  <span style={{ color: 'var(--accent)' }}>92%</span>
-                </div>
-                <div style={{ width: '100%', height: '12px', background: 'var(--surface-alt)', borderRadius: '6px', overflow: 'hidden' }}>
-                  <div style={{ width: '92%', height: '100%', background: 'var(--accent)', borderRadius: '6px' }}></div>
+                <div className="glass-panel" style={{ padding: '1.5rem', background: 'white' }}>
+                  <h4 style={{ color: 'var(--accent)', marginBottom: '0.5rem' }}>Sustainability</h4>
+                  <p>Partnering with local government bodies to ensure that our health initiatives integrate with and support existing public systems.</p>
                 </div>
               </div>
             </div>
             <div>
-               <img src="/assets/images/health_camp_community_1773512223177.png" alt="Community Health Real Impact" style={{ borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
+               <img src="/assets/images/health_camp_hero.png" alt="Community Health Real Impact" style={{ borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
             </div>
           </div>
         </div>

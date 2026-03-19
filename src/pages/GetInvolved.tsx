@@ -61,7 +61,7 @@ const GetInvolved = () => {
         <div className="container">
           <div className="grid grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
             <div>
-              <img src="/assets/images/youth_champions_1773512283086.png" alt="Youth Champions" style={{ borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)' }} />
+              <img src="/assets/images/youth_volunteers_banner.png" alt="Youth Champions" style={{ borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)' }} />
             </div>
             <div>
               <h2 className="title">Why Volunteer With Us?</h2>

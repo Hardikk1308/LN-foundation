@@ -8,7 +8,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-bg">
-          <img src="/assets/images/hero_mothers_kids_health_1773512201492.png" alt="Mothers and Kids Health Camp" />
+          <img src="/assets/images/health_camp_hero.png" alt="Mothers and Kids Health Camp" />
           <div className="hero-overlay"></div>
         </div>
         <div className="container hero-content">
@@ -42,35 +42,13 @@ We are dedicated to organizing general health check-ups, supporting maternal and
               <Link to="/about" className="btn btn-outline mt-2">Learn More About Us</Link>
             </div>
             <div className="mission-image-wrapper">
-              <img src="/assets/images/health_camp_community_1773512223177.png" alt="Health Awareness Camp" className="mission-image" />
+              <img src="/assets/images/medical_screening_closeup.png" alt="Health Awareness Camp" className="mission-image" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Impact Counters (Stats) */}
-      <section className="section stats-section section-bg">
-        <div className="container">
-          <div className="stats-grid grid grid-4 text-center">
-            <div className="stat-card glass-panel">
-              <h3>250+</h3>
-              <p>Villages Reached</p>
-            </div>
-            <div className="stat-card glass-panel">
-              <h3>15,000+</h3>
-              <p>Mothers Supported</p>
-            </div>
-            <div className="stat-card glass-panel">
-              <h3>800+</h3>
-              <p>Health Camps</p>
-            </div>
-            <div className="stat-card glass-panel">
-              <h3>1,200+</h3>
-              <p>Volunteers Trained</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Programs Overview */}
       <section className="section programs-section">
@@ -111,7 +89,7 @@ We are dedicated to organizing general health check-ups, supporting maternal and
       {/* Support / CTA Section */}
       <section className="section cta-section">
         <div className="cta-bg-image">
-          <img src="/assets/images/youth_champions_1773512283086.png" alt="Youth Health Champions" />
+          <img src="/assets/images/youth_volunteers_banner.png" alt="Youth Health Champions" />
           <div className="cta-overlay"></div>
         </div>
         <div className="container cta-content text-center">

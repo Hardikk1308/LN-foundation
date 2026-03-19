@@ -108,7 +108,7 @@ const Donate = () => {
               </div>
             </div>
             
-            <img src="/assets/images/hero_mothers_kids_health_1773512201492.png" alt="Smiling Mother and Child" style={{ width: '100%', borderRadius: 'var(--radius-lg)', height: '200px', objectFit: 'cover' }} />
+            <img src="/assets/images/maternal_health_group.png" alt="Smiling Mother and Child" style={{ width: '100%', borderRadius: 'var(--radius-lg)', height: '200px', objectFit: 'cover' }} />
           </div>
         </div>
       </div>
