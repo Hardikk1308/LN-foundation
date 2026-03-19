@@ -29,7 +29,7 @@ const GetInvolved = () => {
               <p style={{ marginBottom: '2rem', fontSize: '1.05rem', color: 'var(--text-body)' }}>
                 Offer your time and skills for event management, camp setups, content creation, or logistical support across various regions.
               </p>
-              <button className="btn btn-outline" style={{ width: '100%' }}>Apply as Volunteer</button>
+              <a href="https://forms.gle/n1dxXPm1KjBXznYp9" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ display: 'block', width: '100%' }}>Apply as Volunteer</a>
             </div>
 
             <div className="glass-panel text-center" style={{ padding: '3.5rem 2.5rem', background: 'var(--surface-alt)', transform: 'scale(1.05)', boxShadow: 'var(--shadow-lg)', border: '2px solid var(--primary)' }}>
@@ -40,7 +40,7 @@ const GetInvolved = () => {
               <p style={{ marginBottom: '2rem', fontSize: '1.05rem', color: 'var(--text-body)' }}>
                 Dedicated youth from local communities who receive specialized training to directly educate their neighbors regarding fundamental healthcare.
               </p>
-              <button className="btn btn-primary" style={{ width: '100%' }}>Join the Champions</button>
+              <a href="https://forms.gle/n1dxXPm1KjBXznYp9" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ display: 'block', width: '100%' }}>Join the Champions</a>
             </div>
 
             <div className="glass-panel text-center" style={{ padding: '3.5rem 2.5rem' }}>

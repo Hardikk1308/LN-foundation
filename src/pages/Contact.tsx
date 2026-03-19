@@ -1,6 +1,37 @@
+import { useState } from 'react';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    try {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzVYYbUkCkv34ITDl2HPgMFZ7Qde6E0wpfLnzMtPB-bYzweltC38h2e3eILItG7qQ45/exec';
+
+      await fetch(scriptURL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors' // Google specific requirement for simple POSTs
+      });
+      
+      setIsSubmitting(false);
+      setSubmitStatus('success');
+      form.reset();
+    } catch (error) {
+      console.error('Submission Error:', error);
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+    }
+  };
+
   return (
     <div className="page animate-fade-in" style={{ paddingTop: '80px' }}>
       <section className="page-header" style={{
@@ -76,41 +107,52 @@ const Contact = () => {
               <h3 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Send Us a Message</h3>
               <p style={{ color: 'var(--text-body)', marginBottom: '2.5rem' }}>Fill out the form below and our team will get back to you within 24 hours.</p>
               
-              <form onSubmit={(e) => e.preventDefault()}>
+              <form onSubmit={handleSubmit}>
                 <div className="grid grid-2" style={{ gap: '1.5rem', marginBottom: '1.5rem' }}>
                   <div>
                     <label style={{ display: 'block', fontWeight: 500, marginBottom: '0.5rem', fontSize: '0.95rem' }}>First Name</label>
-                    <input type="text" placeholder="John" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem' }} />
+                    <input type="text" name="firstName" required placeholder="John" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem' }} />
                   </div>
                   <div>
                     <label style={{ display: 'block', fontWeight: 500, marginBottom: '0.5rem', fontSize: '0.95rem' }}>Last Name</label>
-                    <input type="text" placeholder="Doe" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem' }} />
+                    <input type="text" name="lastName" required placeholder="Doe" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem' }} />
                   </div>
                 </div>
 
                 <div style={{ marginBottom: '1.5rem' }}>
                   <label style={{ display: 'block', fontWeight: 500, marginBottom: '0.5rem', fontSize: '0.95rem' }}>Email Address</label>
-                  <input type="email" placeholder="john@example.com" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem' }} />
+                  <input type="email" name="email" required placeholder="john@example.com" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem' }} />
                 </div>
 
                 <div style={{ marginBottom: '1.5rem' }}>
                   <label style={{ display: 'block', fontWeight: 500, marginBottom: '0.5rem', fontSize: '0.95rem' }}>Subject of Inquiry</label>
-                  <select style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem', background: 'white' }}>
-                    <option>General Inquiry</option>
-                    <option>Volunteer Application</option>
-                    <option>Donation & Sponsorships</option>
-                    <option>Corporate CSR Partnership</option>
+                  <select name="subject" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem', background: 'white' }}>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Volunteer Application">Volunteer Application</option>
+                    <option value="Donation & Sponsorships">Donation & Sponsorships</option>
+                    <option value="Corporate CSR Partnership">Corporate CSR Partnership</option>
                   </select>
                 </div>
 
                 <div style={{ marginBottom: '2rem' }}>
                   <label style={{ display: 'block', fontWeight: 500, marginBottom: '0.5rem', fontSize: '0.95rem' }}>Your Message</label>
-                  <textarea rows={5} placeholder="How can we help you?" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem', resize: 'vertical' }}></textarea>
+                  <textarea name="message" required rows={5} placeholder="How can we help you?" style={{ width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1rem', resize: 'vertical' }}></textarea>
                 </div>
 
-                <button className="btn btn-primary" style={{ width: '100%', padding: '1.2rem', justifyContent: 'center' }}>
-                  Send Message <Send size={20} />
+                <button type="submit" disabled={isSubmitting} className="btn btn-primary" style={{ width: '100%', padding: '1.2rem', justifyContent: 'center', opacity: isSubmitting ? 0.7 : 1 }}>
+                  {isSubmitting ? 'Sending...' : 'Send Message'} {!isSubmitting && <Send size={20} />}
                 </button>
+
+                {submitStatus === 'success' && (
+                  <div className="animate-fade-in" style={{ marginTop: '1.5rem', padding: '1rem', background: '#dcfce7', color: '#166534', borderRadius: 'var(--radius-md)', textAlign: 'center', fontWeight: 500, border: '1px solid #bbf7d0' }}>
+                    Thank you! Your message has been recorded.
+                  </div>
+                )}
+                {submitStatus === 'error' && (
+                  <div className="animate-fade-in" style={{ marginTop: '1.5rem', padding: '1rem', background: '#fee2e2', color: '#991b1b', borderRadius: 'var(--radius-md)', textAlign: 'center', fontWeight: 500, border: '1px solid #fecaca' }}>
+                    Oops! Something went wrong. Please try again.
+                  </div>
+                )}
               </form>
             </div>
             
