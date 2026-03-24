@@ -8,7 +8,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-bg">
-          <img src="/assets/images/health_camp_hero.png" alt="Mothers and Kids Health Camp" />
+          <img src="/assets/images/medical_camp_2.jpg" alt="Lumenova Foundation Health Camp Group" style={{ filter: 'brightness(0.7)' }} />
           <div className="hero-overlay"></div>
         </div>
         <div className="container hero-content">
@@ -42,7 +42,7 @@ We are dedicated to organizing general health check-ups, supporting maternal and
               <Link to="/about" className="btn btn-outline mt-2">Learn More About Us</Link>
             </div>
             <div className="mission-image-wrapper">
-              <img src="/assets/images/medical_screening_closeup.png" alt="Health Awareness Camp" className="mission-image" />
+              <img src="/assets/images/medical_camp_4.jpg" alt="Health Awareness Camp" className="mission-image" style={{ borderRadius: 'var(--radius-xl)' }} />
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ We are dedicated to organizing general health check-ups, supporting maternal and
       {/* Support / CTA Section */}
       <section className="section cta-section">
         <div className="cta-bg-image">
-          <img src="/assets/images/youth_volunteers_banner.png" alt="Youth Health Champions" />
+          <img src="/assets/images/medical_camp_2.jpg" alt="Youth Health Champions" />
           <div className="cta-overlay"></div>
         </div>
         <div className="container cta-content text-center">

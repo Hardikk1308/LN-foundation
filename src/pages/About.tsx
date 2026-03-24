@@ -31,7 +31,7 @@ const About = () => {
             </div>
             <div>
               <img 
-                src="/assets/images/health_camp_hero.png" 
+                src="/assets/images/medical_camp_4.jpg" 
                 alt="Our Foundation Impact" 
                 style={{ borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)' }}
               />

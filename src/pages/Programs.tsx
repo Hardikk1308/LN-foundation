@@ -35,7 +35,7 @@ const Programs = () => {
               </ul>
             </div>
             <div>
-              <img src="/assets/images/maternal_health_group.png" alt="Maternal Health Program" style={{ borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
+              <img src="/assets/images/medical_camp_2.jpg" alt="Maternal Health Program" style={{ borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ const Programs = () => {
               </ul>
             </div>
             <div style={{ order: 1 }}>
-              <img src="/assets/images/medical_screening_closeup.png" alt="Diabetes Screening" style={{ borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
+              <img src="/assets/images/medical_camp_3.jpg" alt="Diabetes Screening" style={{ borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Programs = () => {
             <p className="subtitle">Sustainable impact through localized capacity building.</p>
           </div>
           <div className="glass-panel" style={{ padding: '4rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', background: 'linear-gradient(to right, rgba(46,139,87,0.1), rgba(30,144,255,0.1))' }}>
-            <img src="/assets/images/youth_volunteers_banner.png" alt="Youth Champions" style={{ width: '100%', maxWidth: '800px', borderRadius: 'var(--radius-lg)', marginBottom: '2rem', boxShadow: 'var(--shadow-md)' }} />
+            <img src="/assets/images/medical_camp_1.jpg" alt="Youth Champions" style={{ width: '100%', maxWidth: '800px', borderRadius: 'var(--radius-lg)', marginBottom: '2rem', boxShadow: 'var(--shadow-md)' }} />
             <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Developing "Health Champions"</h3>
             <p style={{ fontSize: '1.1rem', maxWidth: '800px', marginBottom: '2rem' }}>
               We recruit and train enthusiastic youth from local communities to become Health Champions. They act as the first point of contact for health education, ensuring that crucial awareness regarding immunizations, sanitation, and nutrition is delivered in the native dialect and context.

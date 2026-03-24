@@ -43,8 +43,26 @@ const Impact = () => {
               </div>
             </div>
             <div>
-               <img src="/assets/images/health_camp_hero.png" alt="Community Health Real Impact" style={{ borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
+               <img src="/assets/images/medical_camp_2.jpg" alt="Community Health Real Impact" style={{ borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)' }} />
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <div className="text-center" style={{ marginBottom: '3rem' }}>
+            <h2 className="title">As Seen in the News</h2>
+            <p className="subtitle">Our efforts are being recognized for the positive change we're bringing to the community.</p>
+          </div>
+          <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'white' }}>
+            <img 
+              src="/assets/images/newspaper_cutting.png" 
+              alt="Lumenova Foundation in News" 
+              style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', marginBottom: '1.5rem' }} 
+            />
+            <p style={{ fontStyle: 'italic', color: 'var(--text-light)', textAlign: 'center' }}>
+              "शिविर में 100 लोगों के स्वास्थ्य की जांच" - Recent coverage of our health camp in Jabalpur by local news publishers.
+            </p>
           </div>
         </div>
       </section>
