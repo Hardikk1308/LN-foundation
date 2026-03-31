@@ -42,7 +42,7 @@ We are dedicated to organizing general health check-ups, supporting maternal and
               <Link to="/about" className="btn btn-outline mt-2">Learn More About Us</Link>
             </div>
             <div className="mission-image-wrapper">
-              <img src="/assets/images/medical_camp_4.jpg" alt="Health Awareness Camp" className="mission-image" style={{ borderRadius: 'var(--radius-xl)' }} />
+              <img src="/assets/images/nursing_training_5.png" alt="Lumenova Foundation awareness at Narsinghpur Nursing Training Centre" className="mission-image" style={{ borderRadius: 'var(--radius-xl)' }} />
             </div>
           </div>
         </div>
@@ -81,6 +81,26 @@ We are dedicated to organizing general health check-ups, supporting maternal and
               <h3>Community Education</h3>
               <p>Training youth "Health Champions", conducting interactive health workshops, and raising widespread public health awareness.</p>
               <Link to="/programs" className="program-link">Read More <ArrowRight size={16}/></Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Initiative Section */}
+      <section className="section section-bg">
+        <div className="container">
+          <div className="grid grid-2" style={{ alignItems: 'center', gap: '3rem' }}>
+            <div className="grid grid-2" style={{ gap: '1rem' }}>
+              <img src="/assets/images/nursing_training_1.png" alt="Nursing Program" style={{ borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-sm)', height: '240px', objectFit: 'cover' }} />
+              <img src="/assets/images/nursing_training_2.jpg" alt="Awareness Camp" style={{ borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-sm)', height: '240px', objectFit: 'cover', marginTop: '2rem' }} />
+            </div>
+            <div>
+              <span className="tag" style={{ background: 'var(--accent)', color: 'white' }}>Latest Initiative</span>
+              <h2 className="title">Empowering Future Healthcare Professionals</h2>
+              <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>
+                We recently conducted a successful awareness program at the <strong>Narsinghpur District Nursing Training Centre</strong>. Through creative competitions like Poster Making, Rangoli, and Street Plays (Nukkad Natak), we educated nursing students on NCDs and HPV prevention.
+              </p>
+              <Link to="/programs" className="btn btn-outline">View All Programs <ArrowRight size={18}/></Link>
             </div>
           </div>
         </div>

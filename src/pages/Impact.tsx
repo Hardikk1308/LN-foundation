@@ -54,15 +54,30 @@ const Impact = () => {
             <h2 className="title">As Seen in the News</h2>
             <p className="subtitle">Our efforts are being recognized for the positive change we're bringing to the community.</p>
           </div>
-          <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'white' }}>
-            <img 
-              src="/assets/images/newspaper_cutting.png" 
-              alt="Lumenova Foundation in News" 
-              style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', marginBottom: '1.5rem' }} 
-            />
-            <p style={{ fontStyle: 'italic', color: 'var(--text-light)', textAlign: 'center' }}>
-              "शिविर में 100 लोगों के स्वास्थ्य की जांच" - Recent coverage of our health camp in Jabalpur by local news publishers.
-            </p>
+          <div className="grid grid-2" style={{ gap: '2rem' }}>
+            <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'white' }}>
+              <img 
+                src="/assets/images/newspaper_cutting.png" 
+                alt="Lumenova Foundation in News" 
+                style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', marginBottom: '1.5rem' }} 
+              />
+              <p style={{ fontStyle: 'italic', color: 'var(--text-light)', textAlign: 'center' }}>
+                "शिविर में 100 लोगों के स्वास्थ्य की जांच" - Recent coverage of our health camp in Jabalpur by local news publishers.
+              </p>
+            </div>
+            <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'white' }}>
+              <img 
+                src="/assets/images/nursing_training_3.jpg" 
+                alt="Narsinghpur Nursing awareness" 
+                style={{ maxWidth: '100%', height: '240px', width: '100%', objectFit: 'cover', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', marginBottom: '1.5rem' }} 
+              />
+              <div style={{ textAlign: 'center' }}>
+                <h4 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Narsinghpur Awareness Initiative</h4>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-body)' }}>
+                  A massive health education drive for nursing students on NCD & HPV prevention through various competitive formats.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
