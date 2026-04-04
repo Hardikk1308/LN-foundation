@@ -86,9 +86,56 @@ const Donate = () => {
               </div>
             </div>
 
-            <img src="/assets/images/maternal_health_group.png" alt="Smiling Mother and Child" style={{ width: '100%', borderRadius: 'var(--radius-lg)', height: '200px', objectFit: 'cover' }} />
+            <img src="/assets/images/nursing_training_2.jpg" alt="Foundation Media Feature" style={{ width: '100%', borderRadius: 'var(--radius-lg)', height: '100%', maxHeight: '400px', objectFit: 'contain', background: '#f8fafc', padding: '1rem', border: '1px solid #e2e8f0' }} />
           </div>
         </div>
+
+        {/* Impactful Messages */}
+        <div style={{ marginTop: '5rem' }}>
+          <h2 className="text-center" style={{ fontSize: '2.5rem', marginBottom: '3rem', fontFamily: 'Outfit, sans-serif', color: 'var(--text-dark)' }}>Words of Impact</h2>
+          <div className="grid grid-2" style={{ gap: '2rem' }}>
+            {/* Message 1 */}
+            <div className="glass-panel hover-card" style={{ padding: '2.5rem', borderLeft: '5px solid var(--primary)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
+              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', marginBottom: '1.5rem', color: 'var(--text-dark)', lineHeight: '1.6' }}>
+                "Your small contribution can become someone’s hope, someone’s health, and someone’s future. Support Lumenova Foundation and be the reason a life changes today."
+              </p>
+              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', color: 'var(--text-body)', lineHeight: '1.6' }}>
+                "आपका छोटा सा योगदान किसी की उम्मीद, किसी की सेहत और किसी का भविष्य बन सकता है। Lumenova Foundation के साथ जुड़कर आज किसी का जीवन बदलें।"
+              </p>
+            </div>
+
+            {/* Message 2 */}
+            <div className="glass-panel hover-card" style={{ padding: '2.5rem', borderLeft: '5px solid var(--secondary)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
+              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', marginBottom: '1.5rem', color: 'var(--text-dark)', lineHeight: '1.6' }}>
+                "Don’t just donate—create impact. With Lumenova Foundation, your support transforms lives through health, education, and empowerment."
+              </p>
+              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', color: 'var(--text-body)', lineHeight: '1.6' }}>
+                "सिर्फ दान न करें, बदलाव का हिस्सा बनें। Lumenova Foundation के साथ आपका सहयोग स्वास्थ्य, शिक्षा और सशक्तिकरण के माध्यम से जीवन बदलता है।"
+              </p>
+            </div>
+
+            {/* Message 3 */}
+            <div className="glass-panel hover-card" style={{ padding: '2.5rem', borderLeft: '5px solid var(--primary-dark)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
+              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', marginBottom: '1.5rem', color: 'var(--text-dark)', lineHeight: '1.6' }}>
+                "A single act of kindness can light thousands of lives. Donate to Lumenova Foundation and help us reach those who need it the most."
+              </p>
+              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', color: 'var(--text-body)', lineHeight: '1.6' }}>
+                "आपकी एक मदद हजारों जिंदगियों में रोशनी ला सकती है। Lumenova Foundation को दान देकर ज़रूरतमंदों तक पहुंचने में हमारी मदद करें।"
+              </p>
+            </div>
+
+            {/* Message 4 */}
+            <div className="glass-panel hover-card" style={{ padding: '2.5rem', borderLeft: '5px solid var(--primary)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
+              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', marginBottom: '1.5rem', color: 'var(--text-dark)', lineHeight: '1.6' }}>
+                "Together, we can build a future where no one is left behind. Your donation to Lumenova Foundation fuels real change in real communities."
+              </p>
+              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', color: 'var(--text-body)', lineHeight: '1.6' }}>
+                "आइए मिलकर एक ऐसा समाज बनाएं जहाँ कोई पीछे न रह जाए। आपका दान Lumenova Foundation के साथ वास्तविक बदलाव लाता है।"
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );

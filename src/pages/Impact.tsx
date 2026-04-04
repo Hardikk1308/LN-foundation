@@ -57,19 +57,19 @@ const Impact = () => {
           <div className="grid grid-2" style={{ gap: '2rem' }}>
             <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'white' }}>
               <img 
-                src="/assets/images/newspaper_cutting.png" 
-                alt="Lumenova Foundation in News" 
-                style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', marginBottom: '1.5rem' }} 
+                src="/assets/images/news_jabalpur_latest.png" 
+                alt="Lumenova Foundation Jabalpur News Coverage" 
+                style={{ maxWidth: '100%', height: 'auto', width: '100%', objectFit: 'contain', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', marginBottom: '1.5rem' }} 
               />
               <p style={{ fontStyle: 'italic', color: 'var(--text-light)', textAlign: 'center' }}>
-                "शिविर में 100 लोगों के स्वास्थ्य की जांच" - Recent coverage of our health camp in Jabalpur by local news publishers.
+                "शिविर में 100 लोगों के स्वास्थ्य की जांच" - Recent coverage of our free health camp in Jabalpur organized for local communities.
               </p>
             </div>
             <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'white' }}>
               <img 
-                src="/assets/images/nursing_training_3.jpg" 
-                alt="Narsinghpur Nursing awareness" 
-                style={{ maxWidth: '100%', height: '240px', width: '100%', objectFit: 'cover', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', marginBottom: '1.5rem' }} 
+                src="/assets/images/news_narsinghpur_certificate.png" 
+                alt="Narsinghpur Nursing awareness newspaper coverage" 
+                style={{ maxWidth: '100%', height: 'auto', width: '100%', objectFit: 'contain', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-md)', marginBottom: '1.5rem' }} 
               />
               <div style={{ textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>Narsinghpur Awareness Initiative</h4>
