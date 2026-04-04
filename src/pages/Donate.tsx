@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { Heart, Activity, ShieldCheck, Stethoscope } from 'lucide-react';
 
 const Donate = () => {
-  const [frequency, setFrequency] = useState('Monthly');
-  const [amount, setAmount] = useState<number | ''>('');
 
   return (
     <div className="page animate-fade-in" style={{ paddingTop: '80px', background: 'var(--surface-alt)' }}>
@@ -14,70 +11,51 @@ const Donate = () => {
         </div>
 
         <div className="grid grid-2" style={{ gap: '3rem', alignItems: 'flex-start' }}>
-          
-          {/* Donation Form */}
+
+          {/* Bank Transfer Details */}
           <div className="glass-panel" style={{ padding: '3rem', background: 'white', borderTop: '4px solid var(--primary)' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '2rem' }}>Make a Secure Donation</h2>
-            
-            <div style={{ marginBottom: '2rem' }}>
-              <label style={{ display: 'block', fontWeight: 600, marginBottom: '1rem' }}>Select Frequency</label>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
-                <button 
-                  onClick={() => setFrequency('Monthly')}
-                  className={`btn ${frequency === 'Monthly' ? 'btn-primary' : 'btn-outline'}`}
-                  style={{ width: '100%' }}
-                >Monthly</button>
-                <button 
-                  onClick={() => setFrequency('Quarterly')}
-                  className={`btn ${frequency === 'Quarterly' ? 'btn-primary' : 'btn-outline'}`}
-                  style={{ width: '100%' }}
-                >Quarterly</button>
-                <button 
-                  onClick={() => setFrequency('Yearly')}
-                  className={`btn ${frequency === 'Yearly' ? 'btn-primary' : 'btn-outline'}`}
-                  style={{ width: '100%' }}
-                >Yearly</button>
-              </div>
-            </div>
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem' }}>Direct Bank Transfer</h2>
+            <p style={{ color: 'var(--text-body)', marginBottom: '2rem', lineHeight: 1.6 }}>
+              You can support our mission by making a direct transfer to our foundation's bank account.
+            </p>
 
-            <div style={{ marginBottom: '2rem' }}>
-              <label style={{ display: 'block', fontWeight: 600, marginBottom: '0.5rem' }}>Amount (INR)</label>
-              <div style={{ position: 'relative' }}>
-                <span style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', fontWeight: 600, color: 'var(--text-body)' }}>₹</span>
-                <input 
-                  type="number" 
-                  value={amount}
-                  onChange={(e) => setAmount(e.target.value ? Number(e.target.value) : '')}
-                  style={{ width: '100%', padding: '1rem 1rem 1rem 2.5rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1', fontSize: '1.1rem' }} 
-                />
+            <div style={{ background: 'var(--surface-alt)', padding: '2rem', borderRadius: 'var(--radius-lg)' }}>
+              <div style={{ marginBottom: '1.5rem' }}>
+                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>Account Name</span>
+                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)' }}>Lumenova Foundation</strong>
               </div>
-            </div>
 
-            <div className="grid grid-2" style={{ gap: '1rem', marginBottom: '2rem' }}>
+              <div style={{ marginBottom: '1.5rem' }}>
+                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>Account Number</span>
+                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)', letterSpacing: '1px' }}>45034124922</strong>
+              </div>
+
+              <div style={{ marginBottom: '1.5rem' }}>
+                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>Bank Name</span>
+                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)' }}>State Bank of India</strong>
+              </div>
+
               <div>
-                <label style={{ display: 'block', fontWeight: 600, marginBottom: '0.5rem' }}>First Name</label>
-                <input type="text" style={{ width: '100%', padding: '0.8rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1' }} />
-              </div>
-              <div>
-                <label style={{ display: 'block', fontWeight: 600, marginBottom: '0.5rem' }}>Last Name</label>
-                <input type="text" style={{ width: '100%', padding: '0.8rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1' }} />
-              </div>
-              <div style={{ gridColumn: '1 / -1' }}>
-                <label style={{ display: 'block', fontWeight: 600, marginBottom: '0.5rem' }}>Email Address</label>
-                <input type="email" style={{ width: '100%', padding: '0.8rem', borderRadius: 'var(--radius-md)', border: '1px solid #cbd5e1' }} />
+                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>IFSC / RTGS Code</span>
+                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)' }}>SBIN0001234</strong>
               </div>
             </div>
 
-            <button className="btn btn-primary" style={{ width: '100%', padding: '1.2rem', fontSize: '1.2rem' }}>
-              Donate {amount ? `₹${amount}` : ''} {frequency} <Heart size={20} />
-            </button>
-            <p style={{ textAlign: 'center', fontSize: '0.85rem', color: '#64748b', marginTop: '1rem' }}>Secure encrypted transaction. Section 80G tax exemption receipt provided.</p>
+            <div style={{ marginTop: '2rem', padding: '1.5rem', border: '1px solid #e2e8f0', borderRadius: 'var(--radius-md)', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+              <Heart size={24} color="var(--primary)" style={{ flexShrink: 0, marginTop: '0.25rem' }} />
+              <div>
+                <strong style={{ display: 'block', marginBottom: '0.5rem' }}>Thank you for your generosity</strong>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-body)', margin: 0 }}>
+                  After making a transfer, please email your transaction reference to <a href="mailto:lnfoundation074@gmail.com" style={{ color: 'var(--primary)', fontWeight: 600 }}>lnfoundation074@gmail.com</a> to receive your tax exemption receipt.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Impact Examples */}
           <div>
             <h2 style={{ fontSize: '2rem', marginBottom: '2rem' }}>The Impact of Your Gift</h2>
-            
+
             <div className="glass-panel" style={{ padding: '1.5rem', display: 'flex', gap: '1.5rem', marginBottom: '1.5rem', alignItems: 'center', background: 'white', transition: 'var(--transition)' }}>
               <div style={{ background: 'var(--surface-alt)', padding: '1rem', borderRadius: '50%' }}>
                 <ShieldCheck size={32} color="var(--primary)" />
@@ -107,7 +85,7 @@ const Donate = () => {
                 <span style={{ fontSize: '0.9rem', opacity: 0.9 }}>Brings doctors, screening machines, and testing kits to a remote village.</span>
               </div>
             </div>
-            
+
             <img src="/assets/images/maternal_health_group.png" alt="Smiling Mother and Child" style={{ width: '100%', borderRadius: 'var(--radius-lg)', height: '200px', objectFit: 'cover' }} />
           </div>
         </div>
