@@ -41,7 +41,7 @@ const Donate = () => {
               </div>
             </div>
 
-            <div style={{ marginTop: '2rem', padding: '1.5rem', border: '1px solid #e2e8f0', borderRadius: 'var(--radius-md)', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+            {/* <div style={{ marginTop: '2rem', padding: '1.5rem', border: '1px solid #e2e8f0', borderRadius: 'var(--radius-md)', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
               <Heart size={24} color="var(--primary)" style={{ flexShrink: 0, marginTop: '0.25rem' }} />
               <div>
                 <strong style={{ display: 'block', marginBottom: '0.5rem' }}>Thank you for your generosity</strong>
@@ -49,7 +49,7 @@ const Donate = () => {
                   After making a transfer, please email your transaction reference to <a href="mailto:lnfoundation074@gmail.com" style={{ color: 'var(--primary)', fontWeight: 600 }}>lnfoundation074@gmail.com</a> to receive your tax exemption receipt.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Impact Examples */}
