@@ -37,7 +37,7 @@ const Donate = () => {
 
               <div>
                 <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>IFSC / RTGS Code</span>
-                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)' }}>SBIN0001234</strong>
+                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)' }}>SBIN0005940</strong>
               </div>
             </div>
 
