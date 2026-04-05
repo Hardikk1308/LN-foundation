@@ -1,4 +1,4 @@
-import { Heart, Activity, ShieldCheck, Stethoscope } from 'lucide-react';
+import { Activity, ShieldCheck, Stethoscope } from 'lucide-react';
 
 const Donate = () => {
 
