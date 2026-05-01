@@ -48,7 +48,7 @@ const Footer = () => {
           <ul className="contact-info">
             <li>
               <MapPin className="contact-icon" size={20} />
-              <span>New Bali Bazaar<br/>Chhindwara,Madhya Pradesh, India 480001</span>
+              <span>New Bali Bazaar<br />Chhindwara,Madhya Pradesh, India 480001</span>
             </li>
             <li>
               <Phone className="contact-icon" size={20} />
@@ -56,12 +56,12 @@ const Footer = () => {
             </li>
             <li>
               <Mail className="contact-icon" size={20} />
-              <span>lnfoundation074@gmail.com</span>
+              <span>info@lumenovafoundation.org</span>
             </li>
           </ul>
         </div>
       </div>
-      
+
       <div className="footer-bottom">
         <div className="container bottom-content">
           <p>&copy; {new Date().getFullYear()} Lumenova Foundation. All rights reserved.</p>
