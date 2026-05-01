@@ -22,9 +22,9 @@ const Donate = () => {
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'var(--surface-alt)', padding: '2rem', borderRadius: 'var(--radius-lg)' }}>
               <div style={{ marginBottom: '1.5rem', background: 'white', padding: '1rem', borderRadius: 'var(--radius-md)', display: 'inline-block' }}>
                 <img 
-                  src="/assets/images/donation_qr.png" 
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=upi://pay?pa=lumenova8989@sbi%26pn=Lumenova%20Foundation" 
                   alt="Scan and Pay QR Code" 
-                  style={{ width: '100%', maxWidth: '280px', display: 'block' }} 
+                  style={{ width: '100%', maxWidth: '200px', display: 'block', margin: '0 auto' }} 
                 />
               </div>
 
