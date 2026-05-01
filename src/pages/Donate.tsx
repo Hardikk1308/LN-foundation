@@ -12,44 +12,27 @@ const Donate = () => {
 
         <div className="grid grid-2" style={{ gap: '3rem', alignItems: 'flex-start' }}>
 
-          {/* Bank Transfer Details */}
-          <div className="glass-panel" style={{ padding: '3rem', background: 'white', borderTop: '4px solid var(--primary)' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem' }}>Direct Bank Transfer</h2>
+          {/* Scan & Pay Details */}
+          <div className="glass-panel" style={{ padding: '3rem', background: 'white', borderTop: '4px solid var(--primary)', textAlign: 'center' }}>
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem' }}>Scan & Pay</h2>
             <p style={{ color: 'var(--text-body)', marginBottom: '2rem', lineHeight: 1.6 }}>
-              You can support our mission by making a direct transfer to our foundation's bank account.
+              You can support our mission by scanning the QR code below using any UPI app.
             </p>
 
-            <div style={{ background: 'var(--surface-alt)', padding: '2rem', borderRadius: 'var(--radius-lg)' }}>
-              <div style={{ marginBottom: '1.5rem' }}>
-                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>Account Name</span>
-                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)' }}>Lumenova Foundation</strong>
-              </div>
-
-              <div style={{ marginBottom: '1.5rem' }}>
-                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>Account Number</span>
-                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)', letterSpacing: '1px' }}>45034124922</strong>
-              </div>
-
-              <div style={{ marginBottom: '1.5rem' }}>
-                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>Bank Name</span>
-                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)' }}>State Bank of India</strong>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'var(--surface-alt)', padding: '2rem', borderRadius: 'var(--radius-lg)' }}>
+              <div style={{ marginBottom: '1.5rem', background: 'white', padding: '1rem', borderRadius: 'var(--radius-md)', display: 'inline-block' }}>
+                <img 
+                  src="/assets/images/donation_qr.png" 
+                  alt="Scan and Pay QR Code" 
+                  style={{ width: '100%', maxWidth: '280px', display: 'block' }} 
+                />
               </div>
 
               <div>
-                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>IFSC / RTGS Code</span>
-                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)' }}>SBIN0005940</strong>
+                <span style={{ display: 'block', fontSize: '0.9rem', color: '#64748b', marginBottom: '0.25rem' }}>UPI ID</span>
+                <strong style={{ fontSize: '1.2rem', color: 'var(--text-dark)', letterSpacing: '1px' }}>lumenova8989@sbi</strong>
               </div>
             </div>
-
-            {/* <div style={{ marginTop: '2rem', padding: '1.5rem', border: '1px solid #e2e8f0', borderRadius: 'var(--radius-md)', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-              <Heart size={24} color="var(--primary)" style={{ flexShrink: 0, marginTop: '0.25rem' }} />
-              <div>
-                <strong style={{ display: 'block', marginBottom: '0.5rem' }}>Thank you for your generosity</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-body)', margin: 0 }}>
-                  After making a transfer, please email your transaction reference to <a href="mailto:lnfoundation074@gmail.com" style={{ color: 'var(--primary)', fontWeight: 600 }}>lnfoundation074@gmail.com</a> to receive your tax exemption receipt.
-                </p>
-              </div>
-            </div> */}
           </div>
 
           {/* Impact Examples */}
